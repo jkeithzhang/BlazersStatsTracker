@@ -1,0 +1,623 @@
+/* Official marks stored locally from the league standings source. */
+.team-mark {
+  width: 52px;
+  height: 59px;
+  display: grid;
+  place-items: center;
+  clip-path: none;
+  background: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
+.team-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 2px #10243d20);
+}
+
+.team-mark--large {
+  width: 106px;
+  height: 121px;
+  font-size: inherit;
+}
+
+/* Fresh-season directory: names and marks only. */
+.dashboard {
+  padding-top: 52px;
+}
+
+.team-card {
+  min-height: 112px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  grid-template-columns: none;
+  grid-template-rows: none;
+}
+
+.team-card .club-name {
+  padding-right: 0;
+}
+
+.club-copy {
+  display: grid;
+  gap: 5px;
+  align-self: center;
+}
+
+.club-record {
+  color: #68798d;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.club-differential {
+  color: #c92538;
+}
+
+.new-game-view { max-width: 1140px; margin: 0 auto; padding: 48px 32px 72px; }
+.new-game-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }
+.new-game-heading h1 { margin: 4px 0 0; font-size: 2rem; }
+.eyebrow { margin: 0; color: #c92538; font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.live-score { color: #c92538; font-weight: 800; }
+.game-setup { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 16px; }
+.game-setup label { display: grid; gap: 8px; color: #60748c; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.game-setup input, .game-setup select { box-sizing: border-box; min-height: 46px; width: 100%; border: 1px solid #d8e0ea; background: #fff; color: #112a49; font: inherit; padding: 0 12px; text-transform: none; }
+.custom-opponent-field { grid-column: span 2; }
+.calculated-score { display: flex; min-height: 46px; align-items: center; justify-content: center; border: 1px solid #d8e0ea; background: #f4f6f9; color: #112a49; font-size: 1rem; font-variant-numeric: tabular-nums; font-weight: 800; }
+.number-step, .stat-step { display: inline-flex; align-items: center; justify-content: center; gap: 7px; }
+.number-step { min-height: 46px; border: 1px solid #d8e0ea; background: #fff; }
+.number-step button, .stat-step button { width: 27px; height: 27px; border: 1px solid #cbd6e2; background: #fff; color: #112a49; border-radius: 50%; font-size: 1rem; line-height: 1; cursor: pointer; }
+.number-step output, .stat-step output { min-width: 24px; color: #112a49; font-variant-numeric: tabular-nums; font-weight: 800; text-align: center; }
+.live-total { margin: 10px 0 20px; color: #60748c; font-size: .9rem; }
+.device-save-status,
+.sync-status {
+  margin: -9px 0 20px;
+  color: #4e667d;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.device-save-status span { color: #17824b; font-size: .66rem; vertical-align: 1px; }
+.sync-status { margin: 16px 0 0; color: #9a6410; }
+.entry-table td { padding: 11px 8px; }
+.entry-table td:nth-child(3) { font-weight: 700; }
+.affiliate-entry { display: flex; align-items: end; justify-content: flex-end; gap: 10px; margin: 0 0 14px; }
+.affiliate-entry label { display: grid; gap: 6px; color: #60748c; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.affiliate-entry input { box-sizing: border-box; min-height: 40px; width: 220px; border: 1px solid #d8e0ea; background: #fff; color: #112a49; padding: 0 10px; font: inherit; font-size: .88rem; font-weight: 600; text-transform: none; }
+.affiliate-entry button { min-height: 40px; border: 0; background: #112a49; color: #fff; padding: 0 14px; font: inherit; font-size: .82rem; font-weight: 800; cursor: pointer; }
+.affiliate-entry button:disabled { cursor: not-allowed; opacity: .5; }
+.reorder-hint { margin: 0 0 8px; color: #60748c; font-size: .78rem; }
+.entry-table .drag-cell { width: 38px; padding-right: 0; text-align: center; }
+.drag-handle { width: 30px; height: 34px; border: 0; background: transparent; color: #60748c; cursor: grab; font-size: 1.15rem; line-height: 1; touch-action: none; }
+.drag-handle:active { cursor: grabbing; color: #c92538; }
+.drag-handle:focus-visible { outline: 2px solid #c92538; outline-offset: 1px; }
+.position-select { min-height: 34px; border: 1px solid #d8e0ea; background: #fff; color: #112a49; padding: 0 5px; font: inherit; font-size: .78rem; font-weight: 800; }
+.attendance-cell { width: 44px; text-align: center; }
+.attendance-toggle { width: 30px; height: 30px; border: 1px solid #c92538; background: #fff; color: #c92538; border-radius: 50%; font: inherit; font-size: 1.2rem; line-height: 1; cursor: pointer; }
+.attendance-toggle:hover { background: #fff2f3; }
+.absent-player > td { background: #f5f6f8; color: #9aa5b3; }
+.absent-player .position-select { border-color: #e3e6ea; background: #f5f6f8; color: #9aa5b3; }
+.absent-player .drag-handle { color: #b8c0ca; cursor: not-allowed; }
+.absent-player .stat-step output { color: #9aa5b3; }
+.stat-step button:disabled { cursor: not-allowed; opacity: .45; }
+.new-game-goalies { min-width: 0; margin: 26px 0 0; padding: 0; border: 0; }
+.new-game-goalies legend { margin-bottom: 6px; color: #10243d; font-size: .95rem; font-weight: 800; }
+.new-game-goalies p { margin: 0 0 12px; color: #60748c; font-size: .84rem; }
+.game-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 22px; }
+.game-actions button { min-height: 46px; padding: 0 20px; font-weight: 800; cursor: pointer; }
+.secondary-action { border: 1px solid #b9c7d8; color: #112a49; background: #fff; }
+.submit-game { border: 0; background: #c92538; color: #fff; }
+.submit-game:disabled { opacity: .65; cursor: wait; }
+.save-error { color: #c92538; font-weight: 700; }
+
+.team-card .rank,
+.team-card .club-meta,
+.team-card .card-chevron {
+  display: none;
+}
+
+.team-mark img {
+  filter: none;
+}
+
+.brand-title {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+/* The directory is now a simple full-width team list. */
+.dashboard {
+  display: block;
+  padding-top: 52px;
+}
+
+.team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.team-card { cursor: default; }
+
+.team-card:hover {
+  transform: none;
+  border-color: #dce3ec;
+  box-shadow: 0 3px 9px #1e395e0a;
+}
+
+/* Empty until game stats are entered. */
+.history-view {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 52px 5.5vw 70px;
+}
+
+.history-table-wrap {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #dce3ec;
+}
+
+.history-table {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+}
+
+.history-table th,
+.history-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e7edf3;
+  text-align: left;
+  font-size: .86rem;
+}
+
+.history-table th {
+  color: #68798d;
+  background: #f4f6f9;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.history-table .empty-cell {
+  padding: 42px 18px;
+  color: #68798d;
+  text-align: center;
+}
+
+.delete-game {
+  min-height: 32px;
+  border: 1px solid #d7aeb4;
+  background: #fff;
+  color: #a51f31;
+  padding: 5px 10px;
+  font: inherit;
+  font-size: .76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.history-actions { display: inline-flex; gap: 8px; }
+
+.confirm-game {
+  min-height: 32px;
+  border: 1px solid #18724b;
+  background: #fff;
+  color: #18724b;
+  padding: 5px 10px;
+  font: inherit;
+  font-size: .76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.confirm-game:hover { background: #effaf4; }
+.confirm-game:disabled { cursor: wait; opacity: .65; }
+
+.final-game {
+  display: inline-block;
+  color: #18724b;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.delete-game:hover { background: #fff3f4; }
+.delete-game:disabled { cursor: wait; opacity: .65; }
+
+.history-row { cursor: pointer; }
+
+.history-row:hover td,
+.history-row:focus td { background: #f8fafc; }
+
+.history-row:focus { outline: 2px solid #bd2c39; outline-offset: -2px; }
+
+.result-loss { color: #bd2c39; font-weight: 800; }
+.result-win { color: #17824b; font-weight: 800; }
+.result-tie { color: #637891; font-weight: 800; }
+
+.sync-label {
+  display: block;
+  margin-top: 3px;
+  color: #9a6410;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.pending-game td { background: #fffaf0; }
+.pending-game:hover td,
+.pending-game:focus td { background: #fff4dd; }
+
+.history-opponent {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.history-opponent img {
+  width: 32px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.game-detail {
+  min-width: 0;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #dce3ec;
+  background: #fff;
+}
+
+.game-detail fieldset {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.game-detail-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.game-detail-heading h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.game-detail-heading button {
+  min-height: 40px;
+  border: 1px solid #bdc9d8;
+  background: #fff;
+  color: #10243d;
+  padding: 8px 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.game-form { display: grid; gap: 24px; }
+
+.game-summary-fields {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.game-summary-fields label {
+  display: grid;
+  gap: 7px;
+  color: #68798d;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.game-summary-fields input {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid #dce3ec;
+  background: #f8fafc;
+  color: #10243d;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: .86rem;
+  font-weight: 700;
+}
+
+.game-form fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.game-form legend {
+  margin-bottom: 10px;
+  color: #10243d;
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.detail-table-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid #dce3ec;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+  scrollbar-width: auto;
+}
+
+.table-scroll-hint { display: none; }
+
+.detail-table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: collapse;
+}
+
+.detail-table th,
+.detail-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e7edf3;
+  text-align: left;
+  font-size: .82rem;
+}
+
+.detail-table th {
+  background: #f4f6f9;
+  color: #68798d;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+/* Roster cards echo the team jersey colours without turning the roster into a table. */
+.roster-view {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 42px 5.5vw 70px;
+}
+
+.roster-group + .roster-group { margin-top: 42px; }
+
+.roster-group h2 {
+  margin: 0 0 14px;
+  color: #10243d;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.roster-card {
+  position: relative;
+  display: flex;
+  min-height: 132px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3px;
+  overflow: hidden;
+  padding: 18px;
+  border: 1px solid #d85416;
+  background: #f36d21;
+  color: #fff;
+}
+
+.roster-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 24px;
+  border-bottom: 3px solid #fff;
+  background: #061c50;
+  content: "";
+}
+
+.roster-card::after {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  left: 0;
+  height: 24px;
+  background: linear-gradient(
+    to bottom,
+    #fff 0 3px,
+    #061c50 3px 10px,
+    #f36d21 10px 13px,
+    #061c50 13px 20px,
+    #fff 20px 23px,
+    transparent 23px
+  );
+  content: "";
+}
+
+.roster-number {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #061c50;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -.08em;
+  line-height: 1;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.roster-name,
+.position-label { position: relative; z-index: 1; }
+
+.roster-name {
+  position: absolute;
+  bottom: 14px;
+  left: 18px;
+  color: #061c50;
+  font-size: .9rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.position-label {
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+  padding: 3px 6px;
+  background: #061c50;
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.roster-card.goalie {
+  border-color: #061c50;
+  background: #f36d21;
+}
+
+.goalie-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.defence-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+@media (max-width: 640px) {
+  .new-game-view { padding: 28px 16px 48px; }
+  .new-game-heading { align-items: start; flex-direction: column; margin-bottom: 22px; }
+  .game-setup { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .custom-opponent-field { grid-column: 1 / -1; }
+  .entry-table-wrap { margin: 0 -16px; }
+  .entry-table { min-width: 770px; }
+  .affiliate-entry { align-items: stretch; flex-direction: column; }
+  .affiliate-entry input { width: 100%; }
+  .site-header {
+    min-height: 0;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 15px 5vw 0;
+  }
+
+  .brand {
+    min-height: 34px;
+    transform: none;
+  }
+
+  .brand-title { font-size: .98rem; }
+  .brand-logo { width: 42px; height: 42px; }
+
+  .site-header nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 8px;
+  }
+
+  .site-header nav button {
+    min-height: 45px;
+    padding: 13px 0 10px;
+    font-size: .76rem;
+  }
+
+  .dashboard,
+  .history-view,
+  .roster-view { padding-right: 5vw; padding-left: 5vw; }
+
+  .dashboard { padding-top: 30px; padding-bottom: 42px; }
+  .history-view { padding-top: 30px; padding-bottom: 48px; }
+  .roster-view { padding-top: 28px; padding-bottom: 48px; }
+
+  .history-table { min-width: 0; }
+  .history-table th,
+  .history-table td { padding: 14px; }
+
+  .game-detail { margin-top: 18px; padding: 18px; }
+  .game-summary-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .game-detail .detail-table-wrap {
+    margin-right: -18px;
+    margin-left: -18px;
+    width: calc(100% + 36px);
+    border-right: 0;
+    border-left: 0;
+  }
+  .game-detail .detail-table { min-width: 610px; }
+  .table-scroll-hint { display: flex; align-items: center; gap: 6px; margin: 0 0 7px; color: #42617d; font-size: .82rem; font-weight: 800; }
+  .table-scroll-hint::before { content: "↔"; color: #c92538; font-size: 1.05rem; line-height: 1; }
+}
+
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .roster-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .defence-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .goalie-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .roster-grid,
+  .goalie-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .roster-group + .roster-group { margin-top: 32px; }
+
+  .roster-card {
+    min-height: 118px;
+    padding: 14px;
+  }
+
+  .roster-number {
+    top: 14px;
+    right: 12px;
+    font-size: 2.15rem;
+  }
+
+  .roster-name {
+    bottom: 12px;
+    left: 14px;
+    font-size: .76rem;
+  }
+
+  .position-label {
+    right: 10px;
+    bottom: 10px;
+    padding: 2px 4px;
+    font-size: .62rem;
+  }
+
+  .game-detail-heading { align-items: flex-start; }
+  .game-detail-heading h2 { font-size: 1rem; }
+  .game-summary-fields { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 380px) {
+  .brand-title { font-size: .9rem; }
+  .brand-logo { width: 38px; height: 38px; }
+  .site-header nav button { font-size: .7rem; }
+  .team-card { gap: 14px; padding: 16px; }
+  .team-mark { width: 46px; height: 52px; }
+}
